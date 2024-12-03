@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black;  */
+  
+}
+.navbar{
+    width: 100%;
+}
+/* #navbarNav{
+    overflow: hidden;
+} */
+
+nav.navbar {
+    background-color: #314c6f !important; /* Replace with your desired color */
+    padding: 10px 20px; /* Optional: Add some padding */
+  }
+.navbar-brand{
+    color: white;
+}
+.navbar-brand{
+    display: flex;
+    font-weight: bold;
+   
+    font-size: medium;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+.nav-link{
+    color:white !important;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-img{
+    margin-right: 100px;
+
+}
+.nav-item{
+    justify-content:space-around ;
+    
+}
+.ficons{
+    padding-top: 7%;
+    
+    
+    
+}
+body{
+    overflow-x: hidden;
+}
+.icon{
+    text-decoration: none;
+    margin-bottom: 10px !important;
+    font-size: xx-large;
+}
+.ficons i:hover{
+
+    color: hsl(324, 87%, 46%) !important;
+    transform: scaleX(1,1);
+    transform: rotate(180deg);
+}
+.full-head{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: medium;
+}
+.main-para{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:x-large;
+    overflow: hidden;
+}
+
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+}
+/* about page css */
+.img-main{
+    width: 80%;
+    margin-left: 30px;
+}
+.main-head{
+    /* font-size: large; */
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+    /* text-underline-position: auto; */
+}
+.About-section{
+    background-color: white;
+    background-size: cover;
+}
+.java{
+    color: black;
+    margin-right:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.java-1{
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ic{
+    color: black;
+    font-size:large;
+}
+/* skill */
+.progress-bar{
+    background-color: #007bff;
+    height: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.progress{
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    max-width: 75%;
+    position: relative;
+}
+.progress-container{
+    margin-bottom: 15px;
+}
+.skill-head{
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
+}
+.progress-bar:hover {
+    background-color: #000306;
+    transform: scaleX(1.05);
+    cursor: pointer;
+}
+.progress-bar::after {
+    content: attr(data-hover);
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #007bff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.progress-bar:hover::after {
+    opacity: 1;
+}
+.course{
+    margin-left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20%x;
+    color: black;
+    justify-content: space-between;
+}
+.skill-section{
+    background-color: white;
+}
+.skill-para{
+    color: black;
+    margin-left: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+}
+/* projects */
+.card-body{
+    background-color: #333;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.card{
+    justify-content: center;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.project-section{
+    text-decoration: underline;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.p-container{
+    justify-content: center;
+    flex-direction: column;
+    margin-left:100px;
+}
+/* extra circular activites  */
+.parallax {
+    background-image: url('activities-bg.jpg'); /* Replace with your image */
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Filter Button Group */
+.btn-group {
+    margin-right:20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-group .btn {
+    margin: 0 5px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/* Modal Customization */
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-header .btn-close {
+    color: white;
+    opacity: 1;
+}
+
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .parallax {
+        font-size: 1.5rem;
+        height: 200px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.875rem;
+    }
+}
+/* certification page */
+.certification-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification-card:hover {
+    transform: scale(1.05);
+}
+.certification-card .card-body {
+    padding: 20px;
+}
+
+.certification-card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.certification-card .card-text {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.certification-card .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.certification-card .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-header .btn-close {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+.modal-body iframe {
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .certification-card {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+/* contact */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 36px;
+    color: #007bff;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Google Map styling */
+iframe {
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+}
